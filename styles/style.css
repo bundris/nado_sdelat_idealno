@@ -1,4 +1,4 @@
-@import url("fonts.css");
+@import url("../fonts/font.css");
 *,
 *::before,
 *::after {
@@ -40,6 +40,7 @@ video {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: -1;
 }
 
 body {
@@ -59,7 +60,7 @@ body {
     display: flex;
     width:739px;
     height:408px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .page__heading:hover::before {
@@ -67,7 +68,7 @@ body {
     position: absolute;
     height: 100%;
     inset: 0;
-    z-index: -1;
+    z-index: 2;
     background: rgba(255, 255, 255, 0.30);
 }
 
@@ -85,10 +86,11 @@ body {
     content:'*';
 }
 
-.page__title:hover::before {
+.page__heading:hover .page__title::before {
     position: absolute;
     right: 22px;
     top: 182px;
+    z-index: 1;
     content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
     white-space: pre;
     word-spacing: normal;
@@ -107,3 +109,4 @@ body {
     letter-spacing: normal;
     text-transform: none;
 }
+
