@@ -1,11 +1,13 @@
 @font-face {
-    font-family: "Raleway-ExtraBold";
-    src: url("Raleway-ExtraBold.woff") format("woff"),
-        url("Raleway-ExtraBold.woff2") format("woff2");
+    font-family: "Raleway";
+    src: url("Raleway-ExtraBold.woff2") format("woff2"),
+         url("Raleway-ExtraBold.woff") format("woff");
+    font-weight: bold;
 }
 
 @font-face {
-    font-family: "Raleway-Regular";
-    src: url("Raleway-Regular.woff") format("woff"),
-    url("Raleway-Regular.woff2") format("woff2");
+    font-family: "Raleway";
+    src: url("Raleway-Regular.woff2") format("woff2"),
+         url("Raleway-Regular.woff") format("woff");
+    font-weight: normal;
 }
